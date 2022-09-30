@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h2{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-2 p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.col-2 img{
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    background-color: #ff523b;
+    padding: 8px 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin: 30px 0;
+    transition: 3s;
+}
+.btn:hover{
+    background: #563434;
+}
+header{
+    background: radial-gradient(#fff, lightblue);
+}
+header .row{
+    margin-top: 70px;
+}
+
+/*  <!-- fashioned designed --> */
+.design{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+}
+.col-3 img{
+    width: 100%;
+}
+.sub-container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/*  <!-- fashion product --> */
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    height: 300px;
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+}
+.rating{
+    color: gold;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+/* 
+    <!-- Testimonial Section --> */
+
+    .testimonial{
+        padding: 100px;
+    }
+    .testimonial .col-3{
+        text-align: center;
+        padding: 40px 20px;
+        border: 0.5px solid blue;
+    }
+    .testimonial .col-3 img{
+        width: 100px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    .fa.fa-quote-left{
+        font-size: 40px;
+        color: blue;
+    }
+    .col-3 p{
+        margin: 12px 0;
+    }
+    .testimonial .col-3 h3{
+        font-size: 20px;
+        font-weight: bold;
+        color: aqua;
+        margin-top: 20px;
+    }
+
+    /* <!-- footer --> */
+    footer{
+        background: black;
+        color: #fff;
+        font-size: 16px;
+        padding: 60px 0px 20px;
+        margin-top:50px ;
+    } 
+    h3{
+        margin-bottom: 20px;
+    }
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+        flex-basis: 30px;
+    }
+    .footer-col-2{
+        flex: 1;
+    }
+    .app-logo{
+        margin-top: 10px;
+    }
+    .footer-col-3, .footer-col-4{
+        flex-basis: 12px;
+        text-align: center;
+    }
+    .copyright{
+        text-align: center;
+        margin-top: 20px;
+    }
+    ul{
+        list-style: none;
+    }
+    .menu-icon{
+        width: 30px;
+        margin-left: 30px;
+        display: none;
+    }
+
+    /* MEDIA QUERY */
+    @media only screen and (max-width: 800px){
+        .nav-sm{
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        nav ul{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: #333;
+            overflow: hidden;
+            transition: max-height 1s;
+        }
+        nav ul li{
+            display: block;
+            margin: 10px 0;
+            margin-right: 30px;
+        }
+        li a{
+            color: #fff;
+        }
+        .menu-icon{
+            display: block;
+        }
+    }
+
+    /* FOR MAX WIDTH LESS THAN 600px */
+    @media only screen and (max-width:600px){
+        .row{
+            text-align: center;
+        }
+        .col-2, .col-3, .col-4{
+            flex-basis: 100%;
+        }
+        .col-3{
+            margin: 20px 0;
+        }
+        .col-2 h2{
+            font-size: 30px;
+            line-height: 30px;
+            margin: 30px 0;
+            padding: 40px 0;
+        }
+    }
+
+
